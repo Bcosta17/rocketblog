@@ -28,14 +28,15 @@ header {
   "cotent imgHeader"
   ;
   grid-template-columns: 50% 50%;
-  gap: 6.4rem 3rem;
+  gap: 6.4rem 6rem;
   padding: 6.9rem 13.5rem;
-
+  border-bottom: solid var(--green) 6px;
   font-size: 1.8rem;
   color: var(--white);
 }
 
 header nav {
+  margin: 0 5rem;
   grid-area: nav;
   display: flex;
   justify-content: space-between;
@@ -63,6 +64,8 @@ header nav .search-input input {
   border: none;
   font-size: 1.4rem;
   padding: 1.4rem 2.5rem;
+  color: white;
+  outline: none;
 }
 
 header nav .search-input button {
@@ -105,3 +108,61 @@ header .img {
 }
 
 /* =========== main =========== */
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--purple-bg);
+  margin: .8rem 0;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+main {
+  display: grid;
+  grid-template-areas: 
+  "mainPost sidePosts"
+  "otherPosts otherPosts"
+  ;
+  gap: 6rem 13rem;
+  padding: 6rem 13.6rem;
+}
+
+main .main-post {
+  grid-area: mainPost;
+  width: 56.9rem;
+}
+
+main .main-post h2 {
+  margin: 1.6rem 0;
+}
+
+
+
+main .side-posts {
+  grid-area: sidePosts;
+}
+
+main .side-post {
+  text-align: justify;
+  width: 43rem;
+  margin-bottom: 4.8rem;
+}
+
+
+main .other-posts{
+  grid-area: otherPosts;
+  display: flex;
+  gap: 3rem;
+}
+
+main .other-post{
+  width: 37.8rem;
+}
+
+.date {
+  margin-top: .8rem;
+}
